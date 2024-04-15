@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Swiffy</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/testimonials/testimonial-2/assets/css/testimonial-2.css">
+
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+            <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
+        <span class="text-uppercase fw-lighter ms-2">SWIFFY</span>
+        </a>
+            <div class="order-lg-2 nav.btns">
+            <button type="button" class="btns position-relative">
+            <i class="fa fa-shopping-cart" id="cart-icon"></i>
+            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+        </button>
+      </div>
+       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">collection's</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#specials">specials</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#clients">Clients</a>
+                    </li>
+                    <li class="nav-item px-3 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+  
+        </div>
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+      <a href="order.html" target="_blank">
+      <button class="btn-buy">Place Order</button></a>
+      <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+    </div> 
+    <button class="btn mt-3 text-uppercase">login</button></a>
+</nav>
+
+<!-- end-navbar-->
+
+
+<!--header-->
+<header id="header" class="vh-100" style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center  carousel-inner">
+    <div class="text-center carousel-item active">
+        <h2 class="text-capitalize text-white">Best Collection's</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-white">new Collection's</h1>
+        <a href="#collection" class="btn mt-3 text-uppercase">Shop now</a>
+    </div>  
+</div>
+</header>
+
+
+<!--collection-->
+<section id="collection" class="py-5">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="position-relative d-inline-block">New Collection's</h2>
+        </div>
+        <div class="row g-0">
+            <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                <button type="button" class="btn m-2 text-dark" data-filter="#men">Men's Fashion's</button>
+                <button type="button" class="btn m-2 text-dark" data-filter="#women">Women's Fashion</button>
+                <button type="button" class="btn m-2 text-dark" data-filter="#child">Children's</button>
+            </div>
+               <div class="container">
+                      <h2 class="title">New Trending Dress</h2>
+                      <div class="shop-content">
+                  
+                        <div class="food-box" id="men">
+                          <div class="pic">
+                            <img src="img/15.jpg" class="food-img">
+                          </div>
+                          <h2 class="food-title">Geans Shirt</h2>
+                          <span class="food-price">Rs.641</span>
+                          
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women7.webp" class="food-img"></div>
+                          <h2 class="food-title">Geqns Seirt</h2>
+                          <span class="food-price">Rs.1612</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="male">
+                          <div class="pic"><img src="img/18.jpg" class="food-img"></div>
+                          <h2 class="food-title">Geans Shirt</h2>
+                          <span class="food-price">Rs.1810</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="child">
+                          <div class="pic"><img src="img/child1.jpg" class="food-img"></div>
+                          <h2 class="food-title">Children's</h2>
+                          <span class="food-price">Rs.519</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/17.jpg" class="food-img"></div>
+                          <h2 class="food-title">Shirt</h2>
+                          <span class="food-price">Rs.2225</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="child">
+                          <div class="pic"><img src="img/child3.jpg" class="food-img"></div>
+                          <h2 class="food-title">Jumbba</h2>
+                          <span class="food-price">Rs.1510</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women1.jpg" class="food-img"></div>
+                          <h2 class="food-title">Red Top</h2>
+                          <span class="food-price">Rs.2225</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/16.jpg" class="food-img"></div>
+                          <h2 class="food-title">Blue Shirt</h2>
+                          <span class="food-price">Rs.653</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women9.webp" class="food-img"></div>
+                          <h2 class="food-title">Blaa Shirt</h2>
+                          <span class="food-price">Rs.625</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                        
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/15.jpg" class="food-img"></div>
+                          <h2 class="food-title">Checks's Shirt</h2>
+                          <span class="food-price">Rs.625</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women2.jpg" class="food-img"></div>
+                          <h2 class="food-title">Fashion  Dress</h2>
+                          <span class="food-price">Rs.6335</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women8.webp" class="food-img"></div>
+                          <h2 class="food-title">Trending Top</h2>
+                          <span class="food-price">Rs.635</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="child">
+                          <div class="pic"><img src="img/child4.jpg" class="food-img"></div>
+                          <h2 class="food-title">Child Dresssss</h2>
+                          <span class="food-price">Rs.635</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women10.webp" class="food-img"></div>
+                          <h2 class="food-title">Green Saaress</h2>
+                          <span class="food-price">Rs.4135</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-secondary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/13.jpg" class="food-img"></div>
+                          <h2 class="food-title">Orange Checks</h2>
+                          <span class="food-price">Rs.999</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/20.webp" class="food-img"></div>
+                          <h2 class="food-title">White Shirt</h2>
+                          <span class="food-price">Rs.1299</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-secondary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="child">
+                          <div class="pic"><img src="img/child7.webp" class="food-img"></div>
+                          <h2 class="food-title">Child Dress</h2>
+                          <span class="food-price">Rs.735</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/21.webp" class="food-img"></div>
+                          <h2 class="food-title">Men's Shirt</h2>
+                          <span class="food-price">Rs.899</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women6.webp" class="food-img"></div>
+                          <h2 class="food-title">Female Grey Top</h2>
+                          <span class="food-price">Rs.4445</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/22.webp" class="food-img"></div>
+                          <h2 class="food-title">Black Jacket'ss</h2>
+                          <span class="food-price">Rs.1499</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women12.webp" class="food-img"></div>
+                          <h2 class="food-title">Female Black Top</h2>
+                          <span class="food-price">Rs.1234</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="women">
+                          <div class="pic"><img src="img/women13.webp" class="food-img"></div>
+                          <h2 class="food-title">Balck Top Dress</h2>
+                          <span class="food-price">Rs.899</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="men">
+                          <div class="pic"><img src="img/22.webp" class="food-img"></div>
+                          <h2 class="food-title">Purpule t-Shirt</h2>
+                          <span class="food-price">Rs.1399</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                    
+                        <div class="food-box" id="child">
+                          <div class="pic"><img src="img/child5.jpg" class="food-img"></div>
+                          <h2 class="food-title">Cotton Dress'ss</h2>
+                          <span class="food-price">Rs.987</span>
+                          <div class="rating mt-3">
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class="text-primary"><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                            <span class=""><i class="fas fa-star"></i></span>
+                        </div>
+                          <ion-icon name="cart" class="add-cart"></ion-icon>
+                        </div>
+                  </div>
+                      </div>
+                    </div>
+    </div>
+</section>
+<!--end-collection's-->
+<!--special-product-->
+<section  id="specials" class="py-5">
+    <div class="container">
+        <div class="title text-center py-5">
+            <h2 class="position-relative d-inline-block">special GIFT</h2>
+        </div>
+        <div class="special-list row g-0">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="img/gift1.jpg" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">Standrad's Watch</p>
+                    <span class="fw-bold d-block">Rs.00.00</span>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="img/gift2.jpg" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">redmi 12Pro+</p>
+                    <span class="fw-bold d-block">Rs.00.00</span>
+                     
+                    
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="img/gift3.jpg" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">Sport's Clog</p>
+                    <span class="fw-bold d-block">Rs.00.00</span>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="img/gift4.jpg" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">Black Diamond Watch</p>
+                    <span class="fw-bold d-block">Rs.00.00</span>
+                    
+                </div>
+              </div>
+        </div>
+</section>
+
+    
+
+<!--end of special product-->
+<!--blog-->
+<section id="offers" class="py-5">
+    <div class="container">
+        <div class="row d-flex align-items-center text-center justify-content-lg-start text-lg-start">
+            <div class="offers-content">
+                <span class="text-white">Discount up to $40%</span>
+                <h2 class="mt-2 mb-4 text-white">Big Offere sale!!</h2>
+                <a href="#collection" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end-blog-->
+
+<!--about-us-->
+<section id="about" class="py-5">
+    <div class="container">
+        <div  class="row gy-lg-5 align-items-center">
+            <div class="col-lg-6  order-lg-1 text-center text-lg-start">
+                <div class="title pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+            </div>
+            <p class="lead text-muted">-- is the one of the famous Shop in karnataka.</p>
+            <p>We Both Offer's Online & Offline Shopping in Our shop. We have online shopping offer's Good Quality  Product's. 
+              We offering Both Online & Offline Transction. Our Shop is 5+ Expercience in This Field. we alse interest in User expercience.
+              Please We Our Shop.!!!!!
+          </p>
+        </div>
+        <div class="col-lg-6 order-lg-0">
+            <img src="img/shop.jpg" alt="" class="img-fluid">
+        </div>
+        </div>
+    </div>
+</section>
+<!--end about-us-->
+
+
+
+
+<section  id="clients" class="py-5">
+  <div class="container">
+      <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Our Client's</h2>
+      
+            </div>
+            </div>
+            </div>
+          </section>
+<div class="wrapper">
+  
+  <div class="box">
+    <i class="fas fa-quote-left quote"></i>
+    <p>i order the item's in this website and I earn A gift voacherin this order. Gift is Aweosome. i loved it!!!!
+      this is one of the best website in my life.....I'am happy with deliveredp[product]
+    </p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Samanta</div>
+        <div class="job">Customber</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/user1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <i class="fas fa-quote-left quote"></i>
+    <p>Really great to the website, shipped to Guwahati in just 3 days very fast and reliable .
+       The packaging was really good. While I was little worried about the packaging but it turned out to be great .
+       </p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Stevan</div>
+        <div class="job">Youtuber |  Customber</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/user.webp" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <i class="fas fa-quote-left  quote"></i>
+    <p>Purchase a dresh for my Children's. The staff is very helpful to choose me perfect dresess for my child. 
+      I am very happy when i received the product and its perfectly install in a time.</p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Riya</div>
+        <div class="job">Customber</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/userr.webp" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5" id="contact">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: var(--pink)"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                SWIFFY ONLINE SHOPPING
+              </h6>
+              <p>
+               Saas is one of the fashion Dressing company, which we give 100% of user satishfacation and Good Quality product, 
+               it including Both Male,female,child's etc.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+              <p>
+                <a class="text-white" href="#collection">New Trend's Dress</a>
+              </p>
+              <p>
+                <a class="text-white" href="#male">Male fashion</a>
+              </p>
+              <p>
+                <a class="text-white" href="#women">Female fashion</a>
+              </p>
+              <p>
+                <a class="text-white" href="#child">Children's Dress</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> UK, karnataka, India</p>
+              <p><i class="fas fa-envelope mr-3"></i> naikjanardhan568@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +91xxxxxxx7</p>
+              <p><i class="fas fa-print mr-3"></i> +918762729866</p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+              <!-- Facebook -->
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #3b5998"
+                 href="https://www.facebook.com/janardhan.naik.9083" target="_blank"
+                 role="button"
+                 ><i class="fab fa-facebook-f"></i
+                ></a>
+  
+              <!-- Twitter -->
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #55acee"
+                 href="https://twitter.com/login?lang=en" target="_blank"
+                 role="button"
+                 ><i class="fab fa-twitter"></i
+                ></a>
+  
+              <!-- Google -->
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #dd4b39"
+                 href="https://www.youtube.com/@SHs-et3tr/about"  target="_blank"
+                 role="button"
+                 ><i class="fab fa-youtube"></i
+                ></a>
+  
+              <!-- Instagram -->
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #ac2bac"
+                 href="https://www.instagram.com/__janardhan__naik__?igshid=NGVhN2U2NjQ0Yg%3D%3D" target="_blank"
+                 role="button"
+                 ><i class="fab fa-instagram"></i
+                ></a>
+  
+              <!-- Linkedin -->
+              <a
+                 class="btn btn-primary btn-floating m-1"
+                 style="background-color: #0082ca"
+                 href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHnHXDYxT4HHQAAAYxiJMCoTQsjNQZ37uhWaldqxA7zypuvgRhbeHN8epJeiRWFil9F1zl8FcIY-DKh8gwPefHCXz7vagyOI60LsjsT3yQcQmBZHpIThXkP24TgYNS_oI6bzAU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjanardhan-naik-587a01240%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" target="_blank"
+                 role="button"
+                 ><i class="fab fa-linkedin-in"></i
+                ></a>
+              
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        ©This Website Copyright:
+        <a class="text-white" href="https://media.tenor.com/bB2JLCtUZgkAAAAi/animated-thank-you.gif" target="_blank">naikjanardhan568@gmail.com</a>
+          
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/js/jquery-1.8.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

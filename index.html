@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto bg-light text-dark shadow-lg rounded">
+          <h2 class="text-center mt-3">Login</h2>
+          <br />
+          <form id="loginForm" onsubmit="return validateLoginForm()">
+            <div class="form-group mx-5">
+              <label for="loginEmail">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <br />
+            <div class="form-group mx-5">
+              <label for="loginPassword">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                placeholder="Password"
+                required
+              /><br />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                class="btn btn-primary mb-5"
+                id="loginSubmit"
+              >
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function validateLoginForm() {
+        var email = document.getElementById("loginEmail").value;
+        var password = document.getElementById("loginPassword").value;
+
+        // Check if email and password are filled
+        if (email.trim() == "" || password.trim() == "") {
+          alert("Please enter both email and password.");
+          return false; // Prevent form submission
+        } else {
+          // Redirect to another HTML page
+          window.location.href = "main.html";
+          return false; // Prevent default form submission behavior
+        }
+      }
+    </script>
+  </body>
+</html>
