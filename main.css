@@ -106,6 +106,16 @@ html {
   background: var(--pink) !important;
 }
 
+.form-control:focus,
+.form-control:hover {
+  border-color: #ec4787; /* Change to the color you want for active and hover states */
+  box-shadow: 0 0 0 0.2rem rgba(214, 53, 115, 0.336); /* Change to the color you want for the shadow */
+}
+
+.narrow-form-control {
+  width: 40px; /* Adjust the width as needed */
+}
+
 /* 
  .add-cart{
   background: #e5345b;
