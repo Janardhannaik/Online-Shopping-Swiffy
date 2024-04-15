@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .rounded {
+        background-color: hotpink;
+        transition: transform 0.5s ease;
+      }
+      .row :hover {
+        background-color: deeppink;
+        transform: scale3d(40);
+      }
+      #loginSubmit {
+        background-color: rgb(235, 0, 78);
+        color: aliceblue;
+      }
+
+      #shadow {
+        /* box-shadow: 0 0 10px 0 rgba(233, 0, 175, 0.918); */
+      }
+
+      #shadow {
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+        box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      }
+      #loginEmail {
+        background-color: white;
+        transition: filter 0.5s ease;
+      }
+
+      #loginPassword {
+        background-color: white;
+      }
+
+      #loginEmail:focus,
+      #loginEmail:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
+      }
+      #loginPassword:focus,
+      #loginPassword:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
+      }
+      :focus,
+      #loginEmail:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
+      }
+      .custom-link {
+        color: rgb(207, 0, 97); /* Change this to the desired color */
+        /* Optional: Removes underline */
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Form Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row p-5">
+        <div
+          class="col-md-6 col-sm-12 bt-sm-5 mx-auto bg-pink-400 text-dark rounded border border-danger text-white"
+          id="shadow"
+        >
+          <h2 class="text-center mt-3">Sign In</h2>
+          <br />
+          <form id="loginForm" onsubmit="return validateLoginForm()">
+            <div class="form-group mx-5">
+              <label for="loginName">Name:</label>
+              <input
+                type="Name"
+                class="form-control"
+                id="loginEmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="form-group mx-5">
+              <label for="loginEmail">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <br />
+
+            <div class="form-group mx-5">
+              <label for="loginPassword">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                placeholder="Password"
+                required
+              /><br />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn mb-5" id="loginSubmit">
+                SignI n</button
+              ><br />
+            </div>
+            <div class="d-flex justify-content-center">
+              <i> I Have an Account!....</i>
+
+              <p class="text-dark" id="signin">
+                <a href="index.html" class="custom-link"><b>Log in</b></a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function validateLoginForm() {
+        var email = document.getElementById("loginEmail").value;
+        var password = document.getElementById("loginPassword").value;
+
+        // Check if email and password are filled
+        if (email.trim() == "" || password.trim() == "") {
+          alert("Please enter both email and password.");
+          return false; // Prevent form submission
+        } else {
+          // Redirect to another HTML page
+          window.location.href = "main.html";
+          return false; // Prevent default form submission behavior
+        }
+      }
+    </script>
+  </body>
+</html>
