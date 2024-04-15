@@ -42,6 +42,28 @@
         ); /* Change to the color you want for active and hover states */
         box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
       }
+      #loginPassword:focus,
+      #loginPassword:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
+      }
+      :focus,
+      #loginEmail:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
+      }
+      .custom-link {
+        color: rgb(207, 0, 97); /* Change this to the desired color */
+        /* Optional: Removes underline */
+      }
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,6 +95,7 @@
               />
             </div>
             <br />
+
             <div class="form-group mx-5">
               <label for="loginPassword">Password:</label>
               <input
@@ -85,8 +108,17 @@
             </div>
             <div class="d-flex justify-content-center">
               <button type="submit" class="btn mb-5" id="loginSubmit">
-                Login
-              </button>
+                Login</button
+              ><br />
+            </div>
+            <div class="d-flex justify-content-center">
+              <i>Don't Have any Account?.</i>
+
+              <p class="signIn text-dark">
+                <a href="signin.html" class="custom-link" class="custom-link"
+                  ><b>Sign in</b></a
+                >
+              </p>
             </div>
           </form>
         </div>
