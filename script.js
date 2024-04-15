@@ -142,7 +142,6 @@ function updateTotal() {
   totalValue.innerHTML = "Rs." + total;
 
   // Add Product Count in Cart Icon
-
   const cartCount = document.querySelector("#cart-count");
   let count = itemList.length;
   cartCount.innerHTML = count;
@@ -153,3 +152,4 @@ function updateTotal() {
     cartCount.style.display = "block";
   }
 }
+// end
