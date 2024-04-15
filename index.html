@@ -4,9 +4,11 @@
     <style>
       .rounded {
         background-color: hotpink;
+        transition: transform 0.5s ease;
       }
       .row :hover {
         background-color: deeppink;
+        transform: scale3d(40);
       }
       #loginSubmit {
         background-color: rgb(235, 0, 78);
@@ -21,6 +23,24 @@
         -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
         -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
         box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      }
+      #loginEmail {
+        background-color: white;
+        transition: filter 0.5s ease;
+      }
+
+      #loginPassword {
+        background-color: white;
+      }
+
+      #loginEmail:focus,
+      #loginEmail:hover {
+        border-color: hsl(
+          303,
+          100%,
+          22%
+        ); /* Change to the color you want for active and hover states */
+        box-shadow: 0 0 0 0.2rem rgba(230, 0, 127, 0.767); /* Change to the color you want for the shadow */
       }
     </style>
     <meta charset="UTF-8" />
