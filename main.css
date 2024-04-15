@@ -295,6 +295,11 @@ html {
   .food-title {
     font-size: 0.8rem;
   }
+  .food-box {
+    width: 80%;
+    margin-left: 10%;
+    gap: 10px;
+  }
 }
 
 .food-price {
